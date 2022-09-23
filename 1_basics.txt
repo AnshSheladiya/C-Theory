@@ -1,0 +1,175 @@
+C programming is considered as the base for other programming languages, that is why it is known as mother language.
+
+also known as:
+Mother language
+System programming language
+Procedure-oriented programming language
+Structured programming language
+Mid-level programming language
+
+break a program into parts or blocks so that it may be easy to understand.
+
+---------------------------------------------------Why is C called a mid-level programming language?---------------------------------------------------
+C has characteristics of both assembly-level i.e. low-level and higher-level languages. 
+So as a result, C is commonly called a middle-level language.
+
+--------------------------------features of the C language--------------------------------
+It is Simple And Efficient. 
+C is a mid-level Programming Language. 
+It is a structured Programming Language.
+It has a function-rich library. 
+Dynamic Memory Management.
+C is super fast.
+We can use pointers in C.
+It is extensible.
+
+--------------------------------use of printf() and scanf() functions--------------------------------
+defined in stdio.h (header file).
+printf() is used to print the output on the display.
+scanf() is used to read  data from the keyboard. and store velue in variable
+
+Some datatype format specifiers for both printing and scanning purposes:
+%d: It's a datatype format specifier for printing and scanning an integer value. 
+%s: It's a datatype format specifier for printing and scanning a string. 
+%c: It's a datatype format specifier for displaying and scanning a character value.
+%f: The datatype format specifier %f is used to display and scan a float value
+
+--------------------------------What is a built-in function in C?--------------------------------
+scanf(), printf(), strcpy, strlwr, strcmp, strlen, strcat, and many more.
+Built-function is also known as library functions that are provided by the system
+
+--------------------------------What is a Preprocessor?--------------------------------
+ that processes a source file before sending it to be compiled
+
+--------------------------------recursion in C?--------------------------------
+when a function calls itself, this technique is called Recursion
+When function is called within the same function
+The function which calls the same function, is known as recursive function.
+A function that calls itself, and doesn't perform any task after function call, is known as tail recursion
+In tail recursion, we generally call the same function with return statement.
+syntax:
+recursionfunction(){    
+recursionfunction(); //calling self function    
+}    
+
+--------------------------------Variables--------------------------------
+variable is a name of the memory location. 
+It is used to store data. 
+Its value can be changed, and it can be reused many times.
+
+syntax to declare a variable:
+type variable_list;  
+
+--------------------------------Rules for defining variables--------------------------------
+alphabets, digits, and underscore.
+name can start with the alphabet, and underscore only. It can't start with a digit.
+No whitespace is allowed within the variable name.
+A variable name must not be any reserved word or keyword, e.g. int, float, etc.
+
+--------------------------------types of variables in c--------------------------------
+local variable
+global variable
+static variable
+automatic variable
+external variable
+
+--------------------------------Static Variable--------------------------------
+A variable that is declared with the static keyword is called static variable.
+It retains its value between multiple function calls.
+
+Exmple:
+void function1(){  
+int x=10;//local variable  
+static int y=10;//static variable  
+x=x+1;  
+y=y+1;  
+printf("%d,%d",x,y);   
+}  
+
+--------------------------------Data Types--------------------------------
+Basic Data Type :	int, char, float, double
+Derived Data Type:	array, pointer, structure, union
+
+--------------------------------Differences between Keyword and Identifier--------------------------------
+Keyword	                                            Identifier
+Keyword is a pre-defined word.	                The identifier is a user-defined word
+It must be written in a lowercase letter.	    It can be written in both lowercase and uppercase letters.
+Its meaning is pre-defined in the c compiler.	Its meaning is not defined in the c compiler.
+It is a combination of alphabetical characters.	It is a combination of alphanumeric characters.
+It does not contain the underscore character.	It can contain the underscore character.
+
+--------------------------------datatype Format Specifier--------------------------------
+%d %u %c %f
+
+--------------------------------ASCII(American Standard Code for information interchange)--------------------------------
+ ascii value represents the character variable in numbers,
+ C programming language, a character variable does not contain a character value itself rather the ascii value of the character variable
+
+
+--------------------------------Constants--------------------------------
+A constant is a value or variable that can't be changed in the program
+const a=10;
+
+--------------------------------strlen() function--------------------------------
+the length of the given string. It doesn't count null character '\0'.
+Ex.
+char ch[20]={'j', 'a', 'v', 'a', 't', 'p', 'o', 'i', 'n', 't', '\0'};    
+   printf("Length of string is: %d",strlen(ch));    //10
+
+--------------------------------strcpy()--------------------------------
+ strcpy(destination, source) function copies the source string in destination.
+ Exmple:
+ char ch[20]={'j', 'a', 'v', 'a', 't', 'p', 'o', 'i', 'n', 't', '\0'};    
+   char ch2[20];    
+   strcpy(ch2,ch);    
+   printf("Value of second string is: %s",ch2);    
+
+--------------------------------strcat()--------------------------------
+strcat(first_string, second_string) function concatenates two strings and result is returned to first_string.
+
+--------------------------------strcmp()--------------------------------
+strcmp(first_string, second_string) function compares two string and returns 0 if both strings are equal.
+
+--------------------------------strrev()--------------------------------
+strrev(string) function returns reverse of the given string
+
+strlwr(string) function returns string characters in lowercase
+strupr(string) function returns string characters in uppercase
+
+--------------------------------getch()--------------------------------
+getch() is a predefined non-standard function that is defined in conio.h header file
+We use a getch() function to hold the output screen for some time until the user passes a key from the keyboard to exit the console screen
+
+--------------------------------File Handling--------------------------------
+No.	Function	Description
+1	fopen()	opens new or existing file
+2	fprintf()	write data into the file
+3	fscanf()	reads data from the file
+4	fputc()	writes a character into the file
+5	fgetc()	reads a character from file
+6	fclose()	closes the file
+7	fseek()	sets the file pointer to given position
+8	fputw()	writes an integer to file
+9	fgetw()	reads an integer from file
+
+Mode	Description
+r	opens a text file in read mode
+w	opens a text file in write mode
+a	opens a text file in append mode
+r+	opens a text file in read and write mode
+w+	opens a text file in read and write mode
+a+	opens a text file in read and write mode
+
+-----------------------------------Array----------------------------------------------------
+used to store a collection of data
+array as a collection of variables of the same type.
+
+use-instead of declaring individual variables,you declare one array variable such as numbers and use numbers[0], numbers[1]...
+
+----------------------------------------------------Functions----------------------------------------------------
+Call by value
+This method copies the actual value of an argument into the formal parameter of the function. In this case, changes made to the parameter inside the function have no effect on the argument.
+
+2	Call by reference
+This method copies the address of an argument into the formal parameter. Inside the function, the address is used to access the actual argument used in the call. This means that changes made to the parameter affect the argument.
+

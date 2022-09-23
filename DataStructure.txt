@@ -1,0 +1,116 @@
+---------------------------------------------------What is Data Structure---------------------------------------------------
+A data structure is a storage that is used to store and organize data. 
+It is a way of arranging data on a computer so that it can be accessed and updated efficiently.
+
+---------------------------------------------------Linear data structure---------------------------------------------------
+data elements are arranged sequentially or linearly
+each element is attached to its previous and next adjacent elements, is called a linear data structure. 
+
+Examples of linear data structures : array, stack, queue, linked list, etc.
+---------------------------------------------------Static data structure---------------------------------------------------
+ has a fixed memory size
+ easier to access the elements in a static data structure. 
+example : array
+
+---------------------------------------------------Dynamic data structure---------------------------------------------------
+size is not fixed
+It can be randomly updated during the runtime 
+example:queue, stack,ETC.
+
+---------------------------------------------------Non-linear data structure---------------------------------------------------
+data elements are not placed sequentially or linearly
+example: trees and graphs.
+
+---------------------------------------------------Array---------------------------------------------------
+An array is a collection of elements of a similar data type.
+
+
+---------------------------------------------------Queue---------------------------------------------------
+Queue is a linear data structure
+follows the  FIFO (First In -First Out)
+
+Working:
+the element which is added first would be the first element to be removed from the list.
+
+structure:that is two end from which both the insertion and deletion take place, and that end is known as front-end(delete) and rear-end(insert)
+
+Examination of the empty condition: front== -1 or front = rear+1, which means that the queue is empty.
+
+Visualization:A Queue is visualized as a horizontal collection.
+
+------------------------------------------------What is a Stack?-------------------------------------------------------
+follows the LIFO (Last-In-First-Out)
+
+Working:
+Suppose we want to store the elements in a stack and let's assume that stack is empty.
+We have taken the stack of size 5 as shown below in which we are pushing the elements one by one until the stack becomes full.
+would be the first one to be deleted.
+
+structure:that is one end from which both the insertion and deletion take place, and that end is known as a top.
+
+example:push and pop operation.
+
+Examination of the empty condition:top==-1
+
+Visualization:A Stack is visualized as a vertical collection.
+
+------------------------------------------------push()------------------------------------------------
+which the elements are inserted at the top of the stack
+In the push function, we need to pass an element which we want to insert in a stack. ex.push(element)
+
+------------------------------------------------pop()------------------------------------------------
+elements are deleted from the top of the stack
+In the pop() function, we do not have to pass any argument.
+
+------------------------------------------------What is Linked list?------------------------------------------------
+A linked list is a collection of objects known as a node
+
+linked list is the collection of nodes that are randomly stored
+Each node consists of two fields.data and link(next)
+data is the value stored at that particular node, and the link(next) is the pointer that holds the address of the next node.
+
+The Linked list works with dynamic memory. memory size can be changed at the run time according to our requirements.
+
+Linked list elements are dependent on each other. As each node contains the address of the next node so to access the next node, we need to access its previous node.
+
+------------------------------------------------What is a singly linked list?------------------------------------------------
+A single linked list is a list of nodes in which node has two parts, the first part is the data part, and the next part is the pointer pointing to the next node in the sequence of nodes.
+
+can be traversed only in the forward direction.
+
+It requires only one list pointer variable, i.e., the head pointer pointing to the first node.
+
+------------------------------------------------What is a Doubly linked list------------------------------------------------
+A doubly linked list is also a collection of nodes in which node has three fields,  
+first field is the pointer containing the address of the previous node, 
+the second is the data field, 
+the third is the pointer containing the address of the next node.
+
+can be accessed in both directions.
+
+requires two list pointer variables, head and last. 
+
+The head pointer points to the first node, and the last pointer points to the last node of the list.
+
+------------------------------------------------Bubble sort------------------------------------------------
+two  elements are compared. If the  elements are not at the correct position, swapping would be performed.
+
+It uses an exchanging method.
+
+It is slower than the selection sort because greater number of comparisons 
+
+------------------------------------------------Selection sort------------------------------------------------
+In selection sort, the minimum element is selected from the array and swap with an element which is at the beginning of the unsorted array.
+
+It uses a selection method.
+
+It is faster than the bubble sort as a lesser number of comparisons is required.
+
+------------------------------------------------Quick Sort------------------------------------------------
+algorithm : arranges the given elements into ascending order by comparing and interchanging the position of the elements.
+
+It works on divide and conquer techniques.
+
+
+
+
